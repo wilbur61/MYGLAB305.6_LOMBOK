@@ -6,7 +6,9 @@ public class LombokTest {
 
         UserLombokModel lombokMdl = new UserLombokModel();
 
-        User trad = new User();
+        User usr = new User();
+        usr.setFirstName("Wilbur");
+        System.out.println("non lombok fname="+usr.getFirstName());
 
         int id=9999;
         UserLomBokReqArgs ra = new UserLomBokReqArgs(id);
@@ -14,9 +16,9 @@ public class LombokTest {
 
         // test getter and setter methods
         lombokMdl.setId(100);
-        lombokMdl.setFirstName("Ramesh");
-        lombokMdl.setLastName("Fadatare");
-        lombokMdl.setAge(28);
+        lombokMdl.setFirstName("Bob");
+        lombokMdl.setLastName("Wire");
+        lombokMdl.setAge(98);
         lombokMdl.setGender("Male");
 
         System.out.println(lombokMdl.getId());
